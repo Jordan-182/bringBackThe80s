@@ -1,10 +1,22 @@
+import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <h1>HOME PAGE</h1>
+        <Image
+          src="/logo.png"
+          alt="Logo du site"
+          width={500}
+          height={500}
+          className={styles.logo}
+        />
+
+        <Link href={"/articles"} className={styles.link}>
+          Entrer
+        </Link>
       </main>
     </div>
   );

@@ -21,7 +21,7 @@ export default function Article({ article }: { article: ArticleModel }) {
         Posté le {article.created_at} par Tommy Vercetti
       </p>
       <Link href={appRoutes.ARTICLES_ID(article.id)} className={styles.link}>
-        Voir plus
+        Lire article
       </Link>
     </article>
   );

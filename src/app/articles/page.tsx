@@ -6,7 +6,7 @@ export default async function ArticlesPage() {
   const articles = await getall();
   return (
     <main className={styles.main}>
-      <h1 className={styles.title}>Articles</h1>
+      <h1 className={styles.title}>Tous mes articles</h1>
       <div>
         <Articles articles={articles} />
       </div>

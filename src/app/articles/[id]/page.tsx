@@ -1,6 +1,7 @@
 import { articleMessages } from "@/data/articleMessages";
 import { ArticleModel } from "@/model/ArticleModel";
 import { getOneById } from "@/service/ArticleService";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import styles from "./ArticleDetail.module.css";
 
@@ -26,10 +27,19 @@ export default async function ArticleDetailPage({ params }: PageParams) {
 
   return (
     <main className={styles.container}>
-      <h1>Détails de l’article #{article.id}</h1>
       <article className={styles.card}>
-        <h2>{article.title}</h2>
-        <p>{article.content}</p>
+        <Image
+          src={article.image_path}
+          className={styles.articleImage}
+          alt="Illustration de l'article"
+          width={500}
+          height={200}
+        />
+        <h1 className={styles.title}>{article.title}</h1>
+        <p className={styles.date}>
+          Posté le {article.created_at} par Tommy Vercetti
+        </p>
+        <p className={styles.content}>{article.content}</p>
       </article>
     </main>
   );

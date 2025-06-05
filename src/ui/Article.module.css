@@ -8,7 +8,8 @@
   background: var(--white);
 
   .articleImage {
-    width: 500px;
+    width: 100%;
+    height: auto;
   }
 
   .title {
