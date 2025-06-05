@@ -1,10 +1,11 @@
 import { articleMessages } from "@/data/articleMessages";
 import { db } from "@/lib/db";
 import { ArticleModel } from "@/model/ArticleModel";
+import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 export async function GET(
-  _req: Request,
+  _req: NextRequest,
   { params }: { params: { id: string } }
 ) {
   const articleId = parseInt(params.id, 10);
