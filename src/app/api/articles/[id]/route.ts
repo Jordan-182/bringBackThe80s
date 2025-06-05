@@ -7,7 +7,7 @@ export async function GET(
   _req: Request,
   { params }: { params: { id: string } }
 ) {
-  const articleId = await parseInt(params.id, 10);
+  const articleId = parseInt(params.id, 10);
   if (isNaN(articleId)) {
     return NextResponse.json(
       { error: articleMessages.invalidId },
