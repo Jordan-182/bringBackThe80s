@@ -1,0 +1,11 @@
+.globalHeader {
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+
+  .logo {
+    margin: -1rem 0;
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Business"
+  },
+  {
+    "id": 2,
+    "name": "Divertissement"
+  },
+  {
+    "id": 3,
+    "name": "Relations"
+  },
+  {
+    "id": 4,
+    "name": "Musique et culture"
+  },
+  {
+    "id": 5,
+    "name": "Philosophie"
+  }
+]

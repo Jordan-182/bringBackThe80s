@@ -1,14 +1,14 @@
-const apiUrl = process.env.NEXT_PUBLIC_API_URL
-const appUrl = process.env.NEXT_PUBLIC_APP_URL
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 const apiRoutes = {
-  INFOS: `${apiUrl}/api/infos`,
-}
+  ARTICLES: `${apiUrl}/api/articles`,
+};
 
 const appRoutes = {
-  INFOS: `${appUrl}/infos`,
-  INFOS_ID: (id: number) => `${appUrl}/infos/${id}`,
-  INFOS_ADD: `${appUrl}/infos/ajouter-info`,
-  INFOS_EDIT: (id: number) => `${appUrl}/infos/${id}/editer-info`,
-}
+  ARTICLES: `${appUrl}/articles`,
+  ARTICLES_ID: (id: number) => `${appUrl}/articles/${id}`,
+  ARTICLES_ADD: `${appUrl}/articles/ajouter-article`,
+  ARTICLE_EDIT: (id: number) => `${appUrl}/articles/${id}/editer-article`,
+};
 
-export { apiRoutes, appRoutes }
+export { apiRoutes, appRoutes };
