@@ -17,7 +17,7 @@
   font-size: 1.2rem;
   color: var(--white);
   border-radius: 5px;
-  border: 2px solid var(--pink);
+  border: 2px solid var(--white);
   background-color: var(--pink);
   transition: 0.3s ease;
 

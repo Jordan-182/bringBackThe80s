@@ -1,9 +1,14 @@
 .globalHeader {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: fixed;
+  align-items: center;
+  z-index: 9;
+
+  a {
+    width: fit-content;
+  }
 
   .logo {
     margin: -1rem 0;

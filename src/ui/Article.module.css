@@ -1,15 +1,29 @@
 .card {
-  border-radius: 5px;
-  padding: 2rem;
-  margin: 1rem;
+  padding: 1rem;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-  border: 2px solid var(--white);
+  border-bottom: 1px solid var(--white);
   background-color: rgba(255, 255, 255, 0.6);
+
+  .imageContainer {
+    height: 150px;
+    width: 300px;
+    overflow: hidden;
+  }
 
   .articleImage {
     width: 100%;
     height: auto;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .title {
@@ -35,5 +49,18 @@
       background: transparent;
       color: var(--pink);
     }
+  }
+}
+
+@media screen and (max-width: 650) {
+  .card {
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
   }
 }

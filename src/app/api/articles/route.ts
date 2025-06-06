@@ -17,7 +17,7 @@ interface UpdateResult {
 export async function GET() {
   try {
     const [rows] = await db.query(
-      "SELECT id, title, content, image_path, created_at, category_id, author_id FROM blog_articles ORDER BY id ASC"
+      "SELECT id, title, content, image_path, created_at, category_id, author_id FROM blog_articles ORDER BY id DESC"
     );
     return NextResponse.json(rows);
   } catch (error) {

@@ -1,0 +1,17 @@
+.globalFooter {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: var(--background);
+  width: 100%;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 650) {
+  .globalFooter {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

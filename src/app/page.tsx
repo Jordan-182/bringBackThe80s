@@ -9,8 +9,8 @@ export default function Home() {
         <Image
           src="/logo.png"
           alt="Logo du site"
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           className={styles.logo}
         />
 
