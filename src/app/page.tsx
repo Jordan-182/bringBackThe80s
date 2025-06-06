@@ -15,7 +15,7 @@ export default function Home() {
         />
 
         <Link href={"/articles"} className={styles.link}>
-          Entrer
+          Découvrir
         </Link>
       </main>
     </div>

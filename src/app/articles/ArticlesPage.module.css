@@ -23,14 +23,18 @@
   border-radius: 50%;
   overflow: hidden;
   flex: none;
+  box-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink),
+    0px 0px 15px var(--pink), 0px 0px 20px var(--pink), 0px 0px 25px var(--pink),
+    0px 0px 30px var(--pink);
 }
 
 .title {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   color: var(--white);
   text-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink),
-    0px 0px 15px var(--pink), 0px 0px 20px var(--pink);
+    0px 0px 15px var(--pink), 0px 0px 20px var(--pink), 0px 0px 25px var(--pink),
+    0px 0px 30px var(--pink);
 }
 
 @media screen and (max-width: 650) {

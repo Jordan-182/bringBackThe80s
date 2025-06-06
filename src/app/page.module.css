@@ -17,11 +17,17 @@
   font-size: 1.2rem;
   color: var(--white);
   border-radius: 5px;
-  border: 2px solid var(--white);
   background-color: var(--pink);
   transition: 0.3s ease;
+  box-shadow: 0px 0px 5px var(--pink), 0px 0px 10px var(--pink),
+    0px 0px 15px var(--pink), 0px 0px 20px var(--pink), 0px 0px 25px var(--pink),
+    0px 0px 30px var(--pink);
 
   &:hover {
-    background-color: transparent;
+    color: var(--pink);
+    background-color: var(--white);
+    box-shadow: 0px 0px 5px var(--white), 0px 0px 10px var(--white),
+      0px 0px 15px var(--white), 0px 0px 20px var(--white),
+      0px 0px 25px var(--white), 0px 0px 30px var(--white);
   }
 }
